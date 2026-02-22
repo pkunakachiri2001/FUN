@@ -74,7 +74,7 @@ export default function PrayerBox() {
               <p style={{ fontSize: '18px', fontWeight: 'bold' }}>
                 ✓ Prayer Request Received! 🙏
               </p>
-              <p style={{ fontSize: '14px', marginTop: '10px', opacity: 0.95' }}>
+              <p style={{ fontSize: '14px', marginTop: '10px', opacity: 0.95 }}>
                 I'll be praying for this. God hears us. 💙
               </p>
             </div>
