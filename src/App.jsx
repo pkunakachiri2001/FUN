@@ -64,7 +64,7 @@ function App() {
 
       {/* Header */}
       <header className="header">
-        <h1>HEY 💙 Xaloe!</h1>
+        <h1>Amicus IPR 💙 Xaloe!</h1>
         <p style={{ fontSize: '18px', fontStyle: 'italic', marginTop: '10px' }}>
           I made something special for you...
         </p>

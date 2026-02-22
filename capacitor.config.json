@@ -1,6 +1,6 @@
 {
-  "appId": "com.hey.xaloe",
-  "appName": "HEY",
+  "appId": "com.amicusipr.app",
+  "appName": "Amicus IPR",
   "webDir": "dist",
   "server": {
     "androidScheme": "https"
