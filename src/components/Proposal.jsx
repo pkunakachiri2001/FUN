@@ -75,28 +75,28 @@ export default function Proposal() {
         <div className="card celebration-card scale-in glow-pulse">
           <div className="zim-pattern"></div>
           <div className="celebration-content">
-            <div className="celebration-emoji bounce-heart">🎉💙✨🇿🇼</div>
-            <h2 className="card-title gradient-text-animate">Thank You, Xaloe! 💕</h2>
+            <div className="celebration-emoji bounce-heart">🎉💙✨😊</div>
+            <h2 className="card-title gradient-text-animate">Thank You! 💕</h2>
             <div className="card-content">
               <p style={{ fontSize: '20px', marginBottom: '20px' }} className="heartbeat-strong">
-                You just made my heart skip a beat! 💙
+                I'm glad we can have this conversation! 💙
               </p>
               <p style={{ marginBottom: '20px' }} className="gradient-text-animate">
-                I promise to:
+                What this means:
               </p>
               <ul style={{ textAlign: 'left', marginLeft: '20px', lineHeight: '2' }} className="slide-in-left">
-                <li>✨ Respect your faith and values always</li>
-                <li>💙 Be there for you on campus and beyond</li>
-                <li>🙏 Support your spiritual journey</li>
-                <li>😊 Make you smile every single day</li>
-                <li>🌟 Be the best version of myself for us</li>
-                <li>🇿🇼 Honor your Zimbabwean roots and culture</li>
+                <li>✨ Respect for faith and values always</li>
+                <li>💙 Being present and supportive</li>
+                <li>🙏 Supporting spiritual growth</li>
+                <li>😊 Building genuine connection</li>
+                <li>🌟 Being the best version of myself</li>
+                <li>🤝 Honest communication and patience</li>
               </ul>
               <p style={{ marginTop: '30px', fontSize: '18px', fontStyle: 'italic' }} className="glow-pulse">
                 "Love is patient, love is kind..." - 1 Corinthians 13:4
               </p>
               <div style={{ marginTop: '30px' }}>
-                <p style={{ fontSize: '24px' }} className="heartbeat-strong">💙 Let's talk soon, my Zimbabwean Queen? 🇿🇼👑 💙</p>
+                <p style={{ fontSize: '24px' }} className="heartbeat-strong">💙 Let's talk soon? ✨ 💙</p>
               </div>
             </div>
           </div>
@@ -109,18 +109,18 @@ export default function Proposal() {
     <div className="container">
       <div className="card proposal-card scale-in shona-border">
         <div className="zim-pattern"></div>
-        <div className="proposal-emoji zim-float">💙🇿🇼</div>
+        <div className="proposal-emoji zim-float">💙✨</div>
         
-        <h2 className="card-title gradient-text-animate">A Simple Question for You, Xaloe...</h2>
+        <h2 className="card-title gradient-text-animate">A Simple Question...</h2>
         
         <div className="card-content">
           <p style={{ fontSize: '22px', marginBottom: '20px', fontWeight: '600' }} className="heartbeat-strong">
-            Xaloe, would you give us a chance?
+            Would you give this a chance?
           </p>
           
           <p style={{ marginBottom: '30px', fontSize: '16px', color: '#718096' }} className="fade-in">
-            I know you're with someone else, and I respect that. But I also know we have something special. 
-            We're at the same university, we share values, and I believe God brought us together for a reason. 💙
+            I believe we have something special. We're at the same place, we share values, 
+            and there's a genuine connection here worth exploring. 💙
           </p>
 
           {/* Psychological element: Visual comparison */}
@@ -128,13 +128,13 @@ export default function Proposal() {
             <div className="comparison-item">
               <div className="comparison-icon">📍</div>
               <div className="comparison-text">
-                <strong>Me:</strong> Right here on campus with you
+                <strong>Proximity:</strong> Right here, present and available
               </div>
             </div>
             <div className="comparison-item">
-              <div className="comparison-icon">✈️</div>
+              <div className="comparison-icon">💙</div>
               <div className="comparison-text">
-                <strong>Him:</strong> Miles away
+                <strong>Connection:</strong> Genuine, shared values and interests
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function Proposal() {
               onClick={handleYesClick}
               style={{ transform: `scale(${yesSize})` }}
             >
-              Yes, Let's Talk! 💙🇿🇼
+              Yes, Let's Talk! 💙✨
             </button>
             
             {noAttempts < 20 ? (
@@ -182,7 +182,7 @@ export default function Proposal() {
           {/* Attempt Counter - Psychological pressure */}
           {noAttempts > 5 && (
             <p className="attempt-counter fade-in" style={{ marginTop: '20px', fontSize: '14px', color: '#718096' }}>
-              You've tried to say no {noAttempts} times... Maybe it's not meant to be "no"? 🤔
+              You've tried to say no {noAttempts} times... Interesting, isn't it? 🤔
             </p>
           )}
         </div>
@@ -192,7 +192,7 @@ export default function Proposal() {
       <div className="card slide-in-right rainbow-border" style={{ marginTop: '20px', background: 'linear-gradient(135deg, #FFF8F0, #E8B4F0)' }}>
         <p style={{ textAlign: 'center', fontStyle: 'italic', color: '#667eea' }}>
           💡 <strong>Did you know?</strong> Studies show that proximity is one of the strongest predictors of successful relationships. 
-          We see each other every day on campus... that's not a coincidence. 💙🇿🇼
+          Being in the same place matters more than we often realize. 💙
         </p>
       </div>
     </div>

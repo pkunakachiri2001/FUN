@@ -60,40 +60,40 @@ export default function WhyImDifferent() {
       category: "🤝 Respect & Patience",
       icon: "⏳",
       points: [
-        "I respect that you're with someone - I'm not demanding anything",
-        "I'm willing to wait for you to be ready (no pressure, no timeline)",
-        "I'll never compromise your values or purity standards",
-        "Patient enough to build friendship first",
-        "I respect your 'no' if that's your final answer",
-        "Your happiness > my desires, always"
+        "Respect for where someone is in their journey",
+        "Willingness to wait without pressure or timelines",
+        "Never compromising values or standards",
+        "Patient enough to build friendship as foundation",
+        "Respecting decisions, whatever they may be",
+        "Prioritizing the other person's happiness"
       ],
-      summary: "I want to earn your heart, not steal it or pressure you into it."
+      summary: "Healthy relationships are built on respect, not pressure."
     },
     {
       category: "💪 Practical Support",
       icon: "🛠️",
       points: [
         "Help with assignments, projects, and deadlines",
-        "Can bring you food when you're too busy to leave the library",
-        "Be there for campus stress and exam anxiety",
-        "Celebrate every test passed and hurdle cleared",
-        "Support your dreams with actions, not just words",
-        "Real help when you need it, not virtual encouragement"
+        "Being available for study sessions and support",
+        "Present during stressful times and challenges",
+        "Celebrating successes in person",
+        "Supporting dreams with actions, not just words",
+        "Real help when needed, not just virtual support"
       ],
-      summary: "I can actually DO things for you, not just text about doing them."
+      summary: "Actions speak louder than words - being present makes a difference."
     },
     {
       category: "🎯 Intentionality",
       icon: "🎯",
       points: [
-        "I built this entire app just to communicate with you",
-        "Every feature here is tailored to your values and personality",
-        "I'm willing to fight for us in a respectful, faith-honoring way",
-        "Effort speaks louder than words - this is my effort",
-        "I'm not giving up easily, but I'll respect your final decision",
-        "You're worth creative, thoughtful pursuit"
+        "Creating something thoughtful to express feelings",
+        "Every detail considered with care and respect",
+        "Effort that goes beyond typical communication",
+        "Actions that demonstrate genuine interest",
+        "Respectful pursuit while honoring boundaries",
+        "Creative expression shows depth of care"
       ],
-      summary: "This app exists because you matter that much to me."
+      summary: "Thoughtful effort shows how much someone values a connection."
     },
     {
       category: "🌱 Growth Together",
@@ -114,14 +114,11 @@ export default function WhyImDifferent() {
     <div className="container">
       <div className="card scale-in shona-border">
         <div className="zim-pattern"></div>
-        <h2 className="card-title gradient-text-animate">💫 Why I'm Different 🇿🇼</h2>
-        <p style={{ fontSize: '14px', fontStyle: 'italic', color: '#667eea', textAlign: 'center', marginTop: '-5px' }}>
-          Nei ndakasiyana - Zvandiri kuunza kwauri
-        </p>
+        <h2 className="card-title gradient-text-animate">💫 What Makes This Different ✨</h2>
         <div className="card-content">
           <p style={{ textAlign: 'center', fontSize: '16px', marginBottom: '30px', color: '#667eea', lineHeight: '1.8' }} className="heartbeat-strong">
-            I'm not saying I'm better than anyone. But I am saying I offer something different - 
-            something that proximity, shared faith, and genuine care make possible. Ndinokupa chimwe chinhu chakasiyana! 💙
+            This isn't about being better than anyone else. It's about offering something meaningful - 
+            where proximity, shared values, and genuine connection make something special possible. 💙
           </p>
 
           <div className="glow-pulse" style={{
@@ -133,12 +130,12 @@ export default function WhyImDifferent() {
             textAlign: 'center'
           }}>
             <p style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>
-              🎯 The Core Difference (Musiyano Mukuru)
+              🎯 The Core Difference
             </p>
             <p style={{ fontSize: '16px', lineHeight: '1.8' }}>
-              I'm not asking you to choose me over him because I'm "better." 
-              I'm asking you to consider choosing <strong>presence over distance</strong> (Kuvapo vs Kure), 
-              <strong>today over someday</strong> (Nhasi vs Rimwe zuva), and <strong>proximity over pixels</strong>. 💙🇿🇼
+              This is about choosing <strong>presence over distance</strong>, 
+              <strong>today over someday</strong>, and <strong>proximity over screens</strong>. 
+              Real connection happens in real time, in real places. 💙✨
             </p>
           </div>
 
@@ -209,19 +206,19 @@ export default function WhyImDifferent() {
             </h3>
             <div style={{ fontSize: '16px', lineHeight: '2', color: '#2D3748' }}>
               <p style={{ marginBottom: '15px' }}>
-                <strong>I'm not perfect.</strong> I'm not claiming to have all the answers or be the "ideal guy."
+                <strong>Nobody is perfect.</strong> We all have strengths and areas for growth.
               </p>
               <p style={{ marginBottom: '15px' }}>
-                <strong>But I am present.</strong> I'm here on campus with you, ready to show up for the big and small moments.
+                <strong>But presence matters.</strong> Being in the same place creates opportunities for real connection.
               </p>
               <p style={{ marginBottom: '15px' }}>
-                <strong>I share your faith.</strong> God comes first, always - that's non-negotiable for both of us.
+                <strong>Shared faith is foundational.</strong> When values align, relationships have a strong base.
               </p>
               <p style={{ marginBottom: '15px' }}>
-                <strong>I respect you.</strong> Your values, your pace, your journey - all honored and protected.
+                <strong>Respect is essential.</strong> Values, pace, and personal journey should always be honored.
               </p>
               <p style={{ marginTop: '25px', fontSize: '18px', color: '#667eea', fontWeight: 'bold', textAlign: 'center' }}>
-                I offer something real, something present, something built on more than hope and Wi-Fi. 💙
+                Real connections are built on genuine presence, shared values, and mutual respect. 💙
               </p>
             </div>
           </div>
@@ -235,10 +232,10 @@ export default function WhyImDifferent() {
           }}>
             <p style={{ fontSize: '16px', fontStyle: 'italic', color: '#764ba2' }}>
               📍 <strong>Distance vs. Presence:</strong> One requires faith that someday will come. 
-              The other offers today, right now, on the same campus. 
+              The other offers today, right now, in the same space. 
             </p>
             <p style={{ fontSize: '16px', marginTop: '15px', color: '#667eea', fontWeight: '600' }}>
-              Why wait for someday when you can build something today? 💙
+              Why wait for someday when today is available? 💙
             </p>
           </div>
         </div>

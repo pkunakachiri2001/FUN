@@ -1,7 +1,7 @@
 {
-  "name": "hey-xaloe",
+  "name": "special-question-app",
   "version": "1.0.0",
-  "description": "HEY - A special app for Xaloe",
+  "description": "A thoughtful app for someone special",
   "main": "index.html",
   "scripts": {
     "dev": "vite",

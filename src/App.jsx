@@ -10,6 +10,12 @@ import FortuneMessages from './components/FortuneMessages';
 import CountdownTimers from './components/CountdownTimers';
 import WhyImDifferent from './components/WhyImDifferent';
 import PrayerBox from './components/PrayerBox';
+import LoveLanguages from './components/LoveLanguages';
+import MusicPlaylist from './components/MusicPlaylist';
+import VisionBoard from './components/VisionBoard';
+import DailyChallenges from './components/DailyChallenges';
+import LettersForFuture from './components/LettersForFuture';
+import RelationshipValues from './components/RelationshipValues';
 
 function App() {
   const navigate = useNavigate();
@@ -44,7 +50,13 @@ function App() {
     { path: '/fortune', label: 'Fortune', icon: '🥠' },
     { path: '/countdown', label: 'Days', icon: '⏰' },
     { path: '/different', label: 'Why Me', icon: '💫' },
-    { path: '/prayer', label: 'Prayer', icon: '🕊️' }
+    { path: '/prayer', label: 'Prayer', icon: '🕊️' },
+    { path: '/love-languages', label: 'Love Quiz', icon: '💙' },
+    { path: '/music', label: 'Music', icon: '🎵' },
+    { path: '/vision', label: 'Vision', icon: '✨' },
+    { path: '/challenges', label: 'Challenge', icon: '🎮' },
+    { path: '/letters', label: 'Letters', icon: '💌' },
+    { path: '/values', label: 'Values', icon: '🤝' }
   ];
 
   return (
@@ -64,12 +76,12 @@ function App() {
 
       {/* Header */}
       <header className="header">
-        <h1>Amicus IPR 💙 Xaloe!</h1>
+        <h1>A Special Question 💙</h1>
         <p style={{ fontSize: '18px', fontStyle: 'italic', marginTop: '10px' }}>
-          I made something special for you...
+          Sometimes the best things are worth expressing creatively...
         </p>
         <p style={{ fontSize: '16px', marginTop: '5px', color: '#E8B4F0' }}>
-          my Zimbabwean Queen 🇿🇼👑
+          Take your time to explore ✨
         </p>
       </header>
 
@@ -102,6 +114,12 @@ function App() {
           <Route path="/countdown" element={<CountdownTimers />} />
           <Route path="/different" element={<WhyImDifferent />} />
           <Route path="/prayer" element={<PrayerBox />} />
+          <Route path="/love-languages" element={<LoveLanguages />} />
+          <Route path="/music" element={<MusicPlaylist />} />
+          <Route path="/vision" element={<VisionBoard />} />
+          <Route path="/challenges" element={<DailyChallenges />} />
+          <Route path="/letters" element={<LettersForFuture />} />
+          <Route path="/values" element={<RelationshipValues />} />
         </Routes>
       </main>
     </div>

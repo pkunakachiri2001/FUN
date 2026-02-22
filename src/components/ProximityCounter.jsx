@@ -1,55 +1,35 @@
 import { useState, useEffect } from 'react';
 
 export default function ProximityCounter() {
-  const [stats, setStats] = useState({
-    daysTogether: 0,
-    stepAway: '~1000',
-    sameBuildings: 5,
-    chanceMeetings: 23
-  });
-
-  useEffect(() => {
-    // Calculate days since university started (example: Sept 1, 2025)
-    const startDate = new Date('2025-09-01');
-    const today = new Date();
-    const diffTime = Math.abs(today - startDate);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
-    setStats(prev => ({ ...prev, daysTogether: diffDays }));
-  }, []);
+  const stats = [
+    { number: "~1000", label: "Steps Away (Not Miles!)" },
+    { number: "15", label: "Minutes for Coffee" },
+    { number: "Daily", label: "Potential Interactions" },
+    { number: "24/7", label: "Availability" }
+  ];
 
   return (
     <div className="container">
       <div className="card scale-in shona-border">
         <div className="zim-pattern"></div>
-        <h2 className="card-title gradient-text-animate">📍 The Campus Proximity Advantage 🇿🇼</h2>
+        <h2 className="card-title gradient-text-animate">📍 The Proximity Advantage ✨</h2>
         <div className="card-content">
           <p style={{ textAlign: 'center', fontSize: '18px', marginBottom: '30px', color: '#667eea', fontWeight: '600' }} className="heartbeat-strong">
             "Proximity isn't everything... but it's something meaningful! 💙"
           </p>
 
           <div className="stats-grid">
-            <div className="stat-card glow-pulse">
-              <div className="stat-number">{stats.daysTogether}</div>
-              <div className="stat-label">Days on Campus Together</div>
-            </div>
-            <div className="stat-card float-smooth">
-              <div className="stat-number">{stats.stepAway}</div>
-              <div className="stat-label">Steps Away (Not Miles!)</div>
-            </div>
-            <div className="stat-card glow-pulse">
-              <div className="stat-number">{stats.sameBuildings}</div>
-              <div className="stat-label">Buildings We Share</div>
-            </div>
-            <div className="stat-card float-smooth">
-              <div className="stat-number">{stats.chanceMeetings}</div>
-              <div className="stat-label">Times We've Crossed Paths</div>
-            </div>
+            {stats.map((stat, idx) => (
+              <div key={idx} className={`stat-card ${idx % 2 === 0 ? 'glow-pulse' : 'float-smooth'}`}>
+                <div className="stat-number">{stat.number}</div>
+                <div className="stat-label">{stat.label}</div>
+              </div>
+            ))}
           </div>
 
           <div style={{ marginTop: '40px' }}>
             <h3 style={{ color: '#667eea', marginBottom: '20px', textAlign: 'center' }}>
-              💙 vs ✈️: The Honest Comparison
+              💙 vs ✈️: The Real Difference
             </h3>
 
             <div className="comparison-grid" style={{ display: 'grid', gap: '20px' }}>
@@ -59,14 +39,14 @@ export default function ProximityCounter() {
                 padding: '25px',
                 borderRadius: '15px'
               }}>
-                <div style={{ fontSize: '32px', marginBottom: '10px' }}>💙🇿🇼 With Me</div>
+                <div style={{ fontSize: '32px', marginBottom: '10px' }}>💙 Close Proximity</div>
                 <ul style={{ listStyle: 'none', padding: 0, fontSize: '15px', lineHeight: '2' }}>
                   <li>✓ Coffee dates between classes</li>
-                  <li>✓ Study sessions at the library</li>
-                  <li>✓ Church together on Sundays</li>
-                  <li>✓ Surprise campus visits</li>
-                  <li>✓ In-person hugs when needed</li>
-                  <li>✓ Late-night talks at the café</li>
+                  <li>✓ Study sessions together</li>
+                  <li>✓ Activities on weekends</li>
+                  <li>✓ Spontaneous meet-ups</li>
+                  <li>✓ In-person support when needed</li>
+                  <li>✓ Quality time without planning</li>
                   <li>✓ Face-to-face communication</li>
                   <li>✓ Building memories daily</li>
                 </ul>
@@ -110,7 +90,7 @@ export default function ProximityCounter() {
                 <li>Shared physical experiences create stronger emotional bonds</li>
               </ul>
               <p style={{ marginTop: '20px', fontStyle: 'italic', color: '#667eea' }}>
-                💡 I'm not saying distance can't work... but why choose difficulty when connection is right here?
+                💡 Distance can work, but proximity has natural advantages worth considering.
               </p>
             </div>
           </div>
@@ -126,10 +106,10 @@ export default function ProximityCounter() {
               "Good things come to those who wait..."
             </p>
             <p style={{ fontSize: '18px', color: '#764ba2', fontWeight: 'bold' }}>
-              "But better things come to those who are present!" 💙🇿🇼
+              "But better things come to those who are present!" 💙✨
             </p>
             <p style={{ fontSize: '14px', color: '#718096', marginTop: '20px' }}>
-              We have {stats.daysTogether} days of proximity already... let's not waste God's perfect positioning. 🙏
+              When opportunity and proximity align, it's worth exploring. 🙏
             </p>
           </div>
         </div>

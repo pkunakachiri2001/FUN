@@ -1,6 +1,6 @@
 {
-  "appId": "com.amicusipr.app",
-  "appName": "Amicus IPR",
+  "appId": "com.special.question",
+  "appName": "Special Question",
   "webDir": "dist",
   "server": {
     "androidScheme": "https"

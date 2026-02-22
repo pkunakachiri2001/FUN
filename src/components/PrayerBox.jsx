@@ -57,8 +57,8 @@ export default function PrayerBox() {
         <h2 className="card-title">🕊️ Prayer Request Box</h2>
         <div className="card-content">
           <p style={{ textAlign: 'center', fontSize: '16px', marginBottom: '30px', color: '#667eea', lineHeight: '1.8' }}>
-            Your faith matters to me. Share your prayer requests, and I'll be praying for you. 
-            This is a sacred space between you, me, and God. 🙏💙
+            This is a sacred space for prayer requests. 
+            Your faith journey is important. 🙏💙
           </p>
 
           {showSuccess && (
@@ -75,7 +75,7 @@ export default function PrayerBox() {
                 ✓ Prayer Request Received! 🙏
               </p>
               <p style={{ fontSize: '14px', marginTop: '10px', opacity: 0.95 }}>
-                I'll be praying for this. God hears us. 💙
+                Lifting this up in prayer. God hears us. 💙
               </p>
             </div>
           )}
@@ -287,12 +287,12 @@ export default function PrayerBox() {
             borderRadius: '20px',
             textAlign: 'center'
           }}>
-            <h3 style={{ fontSize: '20px', marginBottom: '15px' }}>🙏 My Prayer for You</h3>
+            <h3 style={{ fontSize: '20px', marginBottom: '15px' }}>🙏 A Prayer for Today</h3>
             <p style={{ fontSize: '16px', lineHeight: '1.8', fontStyle: 'italic' }}>
-              "Father, I pray for Xaloe today. Guide her heart, give her clarity in her decisions, 
-              and surround her with Your peace. If it's Your will for us to be together, open that door. 
-              If not, give us both peace and direction. Above all, help her feel Your love today. 
-              In Jesus' name, Amen. 💙"
+              "Father, we ask for Your guidance today. Grant clarity in decisions, 
+              and surround us with Your peace. If doors should open, make the path clear. 
+              If they should close, give peace and new direction. Above all, may Your love 
+              be felt in powerful ways today. In Jesus' name, Amen. 💙"
             </p>
           </div>
 
