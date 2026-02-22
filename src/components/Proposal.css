@@ -1,0 +1,110 @@
+.proposal-card {
+  text-align: center;
+  position: relative;
+}
+
+.proposal-emoji {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.proposal-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  min-height: 200px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.yes-button {
+  transition: transform 0.3s ease !important;
+  z-index: 10;
+}
+
+.no-button {
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.comparison-box {
+  background: linear-gradient(135deg, #FFF8F0, white);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.comparison-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  background: white;
+  border-radius: 10px;
+}
+
+.comparison-icon {
+  font-size: 32px;
+}
+
+.comparison-text {
+  text-align: left;
+  font-size: 16px;
+}
+
+.encouragement-text {
+  font-size: 16px;
+  font-weight: 600;
+  animation: fadeIn 0.5s ease;
+}
+
+.attempt-counter {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Celebration */
+.celebration-card {
+  text-align: center;
+}
+
+.celebration-content {
+  padding: 20px;
+}
+
+.celebration-emoji {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+/* Confetti animation */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .proposal-buttons {
+    min-height: 250px;
+  }
+  
+  .proposal-emoji {
+    font-size: 60px;
+  }
+  
+  .comparison-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "appId": "com.hey.xaloe",
+  "appName": "HEY",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#E8B4F0",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#667EEA",
+      "overlaysWebView": false
+    }
+  }
+}

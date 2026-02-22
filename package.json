@@ -1,0 +1,32 @@
+{
+  "name": "hey-xaloe",
+  "version": "1.0.0",
+  "description": "HEY - A special app for Xaloe",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cap:sync": "npx cap sync",
+    "cap:open": "npx cap open android",
+    "cap:add": "npx cap add android",
+    "android:build": "npm run build && npx cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "keywords": ["love", "proposal", "fun"],
+  "author": "Your Heart",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^8.0.1",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/cli": "^8.0.1",
+    "@capacitor/core": "^8.0.1",
+    "@capacitor/status-bar": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}

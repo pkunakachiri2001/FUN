@@ -1,0 +1,343 @@
+/* 🇿🇼 ZIMBABWEAN-INSPIRED ADVANCED ANIMATIONS 🇿🇼 */
+
+/* Sparkle particles */
+.sparkles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, #fcd116, #E8B4F0);
+  border-radius: 50%;
+  animation: sparkle 2s ease-in-out infinite;
+  box-shadow: 0 0 10px #fcd116;
+}
+
+/* Zimbabwe Bird Pattern Effect */
+.zim-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, var(--zim-yellow) 35px, var(--zim-yellow) 70px),
+    repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--zim-green) 35px, var(--zim-green) 70px);
+  pointer-events: none;
+  animation: pattern-slide 20s linear infinite;
+}
+
+@keyframes pattern-slide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(70px, 70px); }
+}
+
+/* 3D Flip Card Effect */
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Magnetic Heart Attraction */
+@keyframes magnetic-pull {
+  0%, 100% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-10px) scale(1.1);
+  }
+}
+
+.magnetic-heart {
+  animation: magnetic-pull 2s ease-in-out infinite;
+}
+
+/* Shona Pattern Border Animation */
+.shona-border {
+  position: relative;
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #667eea, #fcd116, #009a49, #E8B4F0) border-box;
+  animation: border-dance 3s linear infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes border-dance {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating Zimbabwe Flag Colors */
+.zim-float {
+  animation: zim-wave 4s ease-in-out infinite;
+}
+
+@keyframes zim-wave {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+    filter: hue-rotate(20deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+}
+
+/* Heartbeat with Scale */
+@keyframes heartbeat-strong {
+  0%, 100% { 
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  10% { 
+    transform: scale(1.15);
+    filter: brightness(1.2);
+  }
+  20% { 
+    transform: scale(1);
+  }
+  30% { 
+    transform: scale(1.15);
+    filter: brightness(1.3);
+  }
+  40% { 
+    transform: scale(1);
+  }
+}
+
+.heartbeat-strong {
+  animation: heartbeat-strong 1.5s ease-in-out infinite;
+}
+
+/* Text Gradient Animation */
+.gradient-text-animate {
+  background: linear-gradient(
+    90deg,
+    #667eea,
+    #764ba2,
+    #E8B4F0,
+    #fcd116,
+    #009a49,
+    #667eea
+  );
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glowing Pulse Effect */
+.glow-pulse {
+  animation: glow-pulse-anim 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-anim {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(102, 126, 234, 0.4),
+      0 0 40px rgba(232, 180, 240, 0.3),
+      0 0 60px rgba(252, 209, 22, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 40px rgba(102, 126, 234, 0.6),
+      0 0 80px rgba(232, 180, 240, 0.5),
+      0 0 120px rgba(252, 209, 22, 0.4);
+    transform: scale(1.02);
+  }
+}
+
+/* Bouncing Hearts */
+@keyframes bounce-heart {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  50% {
+    transform: translateY(0) scale(1);
+  }
+  75% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+.bounce-heart {
+  animation: bounce-heart 2s ease-in-out infinite;
+}
+
+/* Typing Effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typing-text {
+  overflow: hidden;
+  border-right: 3px solid #667eea;
+  white-space: nowrap;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink 0.75s step-end infinite;
+}
+
+/* Shake Animation (for NO button) */
+@keyframes shake-crazy {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  10% { transform: translateX(-10px) rotate(-5deg); }
+  20% { transform: translateX(10px) rotate(5deg); }
+  30% { transform: translateX(-10px) rotate(-5deg); }
+  40% { transform: translateX(10px) rotate(5deg); }
+  50% { transform: translateX(-10px) rotate(-5deg); }
+  60% { transform: translateX(10px) rotate(5deg); }
+  70% { transform: translateX(-10px) rotate(-5deg); }
+  80% { transform: translateX(10px) rotate(5deg); }
+  90% { transform: translateX(-5px) rotate(-2deg); }
+}
+
+.shake-no {
+  animation: shake-crazy 0.5s ease-in-out;
+}
+
+/* Rainbow Border */
+.rainbow-border {
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.rainbow-border::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(
+    45deg,
+    #667eea, #764ba2, #E8B4F0, #fcd116, #009a49, #667eea
+  );
+  border-radius: inherit;
+  z-index: -1;
+  animation: rainbow-rotate 3s linear infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes rainbow-rotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating Effect */
+.float-smooth {
+  animation: float-smooth-anim 3s ease-in-out infinite;
+}
+
+@keyframes float-smooth-anim {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+/* Scale In Center */
+@keyframes scaleInCenter {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-in {
+  animation: scaleInCenter 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+/* Confetti Burst */
+@keyframes confetti-burst {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px) rotate(720deg) scale(0.5);
+  }
+}
+
+.confetti-piece {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  animation: confetti-burst 3s ease-out forwards;
+}
